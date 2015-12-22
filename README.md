@@ -150,6 +150,7 @@ public class Student extends Person {
 public class Person {
 
    protected String Name;
+   
    public void printInformation()
    {
         System.out.println("--------- " + this.Name + "'s Information " + " ---------");
@@ -158,6 +159,7 @@ public class Person {
 
 
 import java.util.Scanner;
+
 import java.util.ArrayList;
 
 public class Main1 {
