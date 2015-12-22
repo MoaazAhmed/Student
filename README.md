@@ -55,7 +55,6 @@ public class Servies {
 public class Student extends Person {
 
     //Students id 
-
     private int id;
     //Students Name
     //private String Name;
@@ -66,7 +65,6 @@ public class Student extends Person {
     /*
      Initialization Student date
      */
-
     public Student() {
         this.id = 0;
         this.Name = "None";
@@ -81,15 +79,12 @@ public class Student extends Person {
      pgpa : Student GPA
      NOT: (p) Stands for parameter
      */
-
     public Student(int pid, String pname, String pdepartment, float pgpa) {
         this.id = pid;
         this.Name = pname;
         this.Department = pdepartment;
         this.GPA = pgpa;
-
     }
-   
     /*
      Change student id 
      pid :student id 
@@ -97,9 +92,7 @@ public class Student extends Person {
     public void setId(int pid) {
         this.id = pid;
     }
-
     //get the current student id 
-
     public int getId() {
         return this.id;
     }
@@ -116,7 +109,6 @@ public class Student extends Person {
     public String getName() {
         return this.Name;
     }
-
     /*
      Change student deparment 
      pdepartment : student department
@@ -124,9 +116,7 @@ public class Student extends Person {
     public void setDepartment(String pdepartment) {
         this.Department = pdepartment;
     }
-
     //get the current student department 
-
     public String getDepartment() {
         return this.Department;
     }
@@ -134,26 +124,21 @@ public class Student extends Person {
      Change student GPA 
      pid :student GPA 
      */
-
     public void setGPA(float pgpa) {
         this.GPA = pgpa;
     }
     //get the current student GPA 
-
     public float getGPA() {
         return this.GPA;
     }
-    
-@Override
+    @Override
     public void printInformation() {
         System.out.println("--------- " + this.Name + "'s Information " + " ---------");
         System.out.println("Department : " + this.Department);
         System.out.println("ID: " + this.id);
         System.out.println("GPA :" + this.GPA);
     }
-
-    
-     public void printInformation(Student std) {
+    public void printInformation(Student std) {
         System.out.println("--------- " + std.Name + "'s Information " + " ---------");
         System.out.println("Department : " + std.Department);
         System.out.println("ID: " + std.id);
@@ -164,19 +149,15 @@ public class Student extends Person {
 public class Person {
 
    protected String Name;
-   
-   
    public void printInformation() {
         System.out.println("--------- " + this.Name + "'s Information " + " ---------");
     }
 }
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package FatihSultanMehmetVakifUniversity;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -185,6 +166,7 @@ public class Main1 {
 
 //------------------------------------------------------------------------------
     public static void main(String[] args) {
+    
         int numOfStudent, numOfSubject;
 
         try {
